@@ -25,12 +25,13 @@ a:hover {
   border-radius: 38px;
   cursor: pointer;
   border: none;
+  color: #ffffff;
   background-color: #ca9e80;
-  -webkit-box-shadow: 0 8px 10px rgba(255, 228, 189, 0.5);
-          box-shadow: 0 8px 10px rgba(255, 228, 189, 0.5);
-  background-image: -webkit-gradient(linear, left top, right top, from(#c47947), to(#ffe4bd));
-  background-image: -o-linear-gradient(left, #c47947 0%, #ffe4bd 100%);
-  background-image: linear-gradient(90deg, #c47947 0%, #ffe4bd 100%);
+  -webkit-box-shadow: 1px 3px 0px rgba(255, 228, 189, 0.5);
+          box-shadow: 1px 3px 0px rgba(255, 228, 189, 0.5);
+  background-image: url(../main/button-img.png), -webkit-gradient(linear, left bottom, left top, color-stop(10%, #c47947), to(#ffe4bd));
+  background-image: url(../main/button-img.png), -o-linear-gradient(bottom, #c47947 10%, #ffe4bd 100%);
+  background-image: url(../main/button-img.png), linear-gradient(0deg, #c47947 10%, #ffe4bd 100%);
 }
 
 .button-header {
@@ -97,4 +98,48 @@ a:hover {
   }
 }
 
+@media (max-width: 576px) {
+  .header {
+    padding: 0;
+    background: grey url(../img/main/main-bg.jpg) center no-repeat;
+  }
+
+  .header-logo {
+    margin-bottom: 18px;
+  }
+
+  .header-phone {
+    display: block;
+    width: 255px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: right;
+  }
+
+  .header-title {
+    margin-top: 40px;
+    font-size: 44px;
+  }
+
+  .header-subtitle {
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+
+  .header-lovers {
+    display: none;
+  }
+}
+
+.webp .button { background-image: url(../main/button-img.webp), -webkit-gradient(linear, left bottom, left top, color-stop(10%, #c47947), to(#ffe4bd)); }
+
+.webp .button { background-image: url(../main/button-img.webp), -o-linear-gradient(bottom, #c47947 10%, #ffe4bd 100%); }
+
+.webp .button { background-image: url(../main/button-img.webp), linear-gradient(0deg, #c47947 10%, #ffe4bd 100%); }
+
 .webp .header { background: grey url(../img/main/main-bg.webp) left no-repeat; }
+
+@media (max-width: 576px) {
+
+  .webp .header { background: grey url(../img/main/main-bg.webp) center no-repeat; }
+}
